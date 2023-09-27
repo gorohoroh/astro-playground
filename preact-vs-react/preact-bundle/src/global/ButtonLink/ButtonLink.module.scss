@@ -1,0 +1,46 @@
+@import "../../styles/var";
+
+.linkBtn {
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 37px;
+  min-width: 100%;
+  max-width: 250px;
+  opacity: 1;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  font-family: $fontTitle;
+  transition: 0s background;
+  white-space: nowrap;
+
+  @include lg {
+    min-width: 140px;
+    max-width: 140px;
+  }
+
+  &:hover {
+    opacity: 0.8;
+    background: linear-gradient(101.63deg,#28A1C0 8.53%,#16489C 107.27%);
+    transition: opacity 0.4s;
+  }
+}
+
+.transparent {
+  border: 2px solid #28a1c0;
+  color: $Dark;
+
+  &:hover {
+    opacity: 0.8;
+    border: none;
+  }
+}
+
+.fill {
+  background: linear-gradient(101.63deg, #28a1c0 8.53%, #16489c 107.27%);
+  color: $White;
+}

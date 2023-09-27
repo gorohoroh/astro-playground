@@ -1,0 +1,23 @@
+@import "../../styles/var";
+
+.container, .largeContainer {
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
+
+  @include md {
+    padding: 0 30px;
+  }
+
+  @include xxl {
+    max-width: 1500px;
+  }
+}
+
+.largeContainer {
+  @include xxl {
+    max-width: 1920px;
+    padding-left: 106px;
+    padding-right: 106px;
+  }
+}
