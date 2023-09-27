@@ -1,0 +1,165 @@
+@import "var";
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: $fontText;
+  font-weight: 400;
+  height: 100%;
+  font-size: 16px;
+  margin: 0;
+  overflow: auto;
+
+  @include lg {
+    overflow: auto !important;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $fontTitle;
+  margin: 0;
+}
+
+h1 {
+  font-size: 40px;
+  line-height: 1.2;
+
+  @include xxl {
+    font-size: 60px;
+  }
+}
+
+h2 {
+  font-size: 32px;
+
+  @include xxl {
+    font-size: 50px;
+  }
+}
+
+h3 {
+  font-size: 1.75rem;
+
+  @include lg {
+    font-size: 24px;
+  }
+
+  @include xl {
+    font-size: 28px;
+  }
+
+  @include xxl {
+    font-size: 40px;
+  }
+}
+
+h4 {
+  font-size: 24px;
+  @include lg {
+    font-size: 32px;
+  }
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+p {
+  margin: 0;
+}
+
+div, p {
+  font-size: 16px;
+  @include xxl {
+    font-size: 18px;
+  }
+}
+
+input {
+  font-family: $fontTitle;
+}
+
+img {
+  border-style: none;
+  margin: 0;
+}
+
+code, pre {
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+code {
+  color: $Blue;
+  font-size: 16px;
+}
+
+header,
+footer {
+  flex-grow: 0;
+}
+
+.main {
+  transition: 0.2s;
+  flex-grow: 1;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a, button, input, label {
+ -webkit-tap-highlight-color: transparent;
+  background-color: transparent;
+  border: 0;
+}
+
+a {
+  text-decoration: none;
+  font-family: $fontText;
+  cursor: pointer;
+  color: inherit;
+
+  @include xxl {
+    font-size: 18px;
+  }
+}
+
+.titleGradient {
+  font-size: 18px;
+  margin-left: 19px;
+  padding-right: 16px;
+  white-space: nowrap;
+  color: #4996d1;
+  background: linear-gradient(101.63deg, #28a1c0 8.53%, #16489c 56.26%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  text-transform: uppercase;
+}
+
+.sectionWrapper {
+  padding: 48px 0;
+
+  @include xxl {
+    padding: 80px 0;
+  }
+}
+
+input[type="checkbox"] {
+  outline: 1px solid white;
+  accent-color: white;
+  width: 1.1em;
+  height: 1.1em;
+}
+
+

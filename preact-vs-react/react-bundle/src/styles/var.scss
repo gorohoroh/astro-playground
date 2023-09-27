@@ -1,0 +1,64 @@
+$sm: 576px;
+$md: 768px;
+$md-l: 1024px;
+$lg: 1280px;
+$xl: 1440px;
+$xxl: 1720px;
+
+// Own vars
+$Black: #000000;
+$Dark: #1B1A19;
+$White: #FFFFFF;
+$Blue: #56CCF2;
+$LightBlue: #C1D5F1;
+$MediumBlue: #4576BA;
+$LinkColor: #116CCB;
+$MediumBlueText: #5485D6;
+
+//Background
+
+$BGLight: #F0F4F9;
+$BGShared: #F3F6FD;
+$BGNavigation: #E4ECF5;
+$BGHeroGradient: radial-gradient(91.65% 592.16% at 57.03% 50%, #FFCEA4 0%, #FFAB87 100%);
+
+//Lines
+$DashBorderGray: #B9CEEB;
+$LightGray: #929292;
+$DarkGray: #81868C;
+
+// Own vars
+
+$fontTitle:'Cairo';
+$fontText:'Inter';
+
+@mixin sm {
+    @media (min-width:$sm) {
+        @content
+    }
+};
+@mixin md {
+    @media (min-width:$md) {
+        @content
+    }
+};
+@mixin md-l {
+    @media (min-width:$md-l) {
+        @content
+    }
+};
+@mixin lg {
+    @media (min-width:$lg) {
+        @content
+    }
+};
+@mixin xl {
+    @media (min-width:$xl) {
+        @content
+    }
+};
+@mixin xxl {
+    @media (min-width:$xxl) {
+        @content
+    }
+};
