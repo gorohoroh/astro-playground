@@ -1,4 +1,4 @@
-import React from "react";
+import preact from "@astrojs/preact";
 
 const LightrunSmallLogo = () => {
     return (

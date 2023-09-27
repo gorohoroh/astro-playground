@@ -1,4 +1,4 @@
-import React from "react";
+import preact from "@astrojs/preact";
 import * as style from "./SinglePageFooter.module.scss";
 import {data, socialLinksList} from "./data/data";
 
